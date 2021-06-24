@@ -10,7 +10,7 @@ const DUMMY_PLACES = [
 		title: 'Empire State Building',
 		description: 'One  of the most famous sky scrapers in the world!',
 		imageUrl:
-			'https://images.unsplash.com/photo-1557137200-fec234cd5740?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGVtcGlyZSUyMHN0YXRlJTIwYnVpbGRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+			'https://images.unsplash.com/photo-1555109307-f7d9da25c244?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZW1waXJlJTIwc3RhdGUlMjBidWlsZGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
 		address: '20 W 34th St, New York, NY 10001',
 		location: {
 			lat: 40.7484405,
@@ -23,7 +23,7 @@ const DUMMY_PLACES = [
 		title: 'The Empire State Building',
 		description: 'One  of the most famous sky scrapers in the world!',
 		imageUrl:
-			'https://images.unsplash.com/photo-1557137200-fec234cd5740?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGVtcGlyZSUyMHN0YXRlJTIwYnVpbGRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+			'https://images.unsplash.com/photo-1544608644-1778e20d070f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGVtcGlyZSUyMHN0YXRlJTIwYnVpbGRpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
 		address: '20 W 34th St, New York, NY 10001',
 		location: {
 			lat: 40.7484405,
