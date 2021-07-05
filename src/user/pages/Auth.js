@@ -32,25 +32,54 @@ const Auth = () => {
 	// Handles switching from SignIn to SignUp for Auth
 	const switchModeHandler = () => {
 		if (!isLoginMode) {
-			setFormData({
-				...formState.inputs, // Bring in existing state
-				name: undefined // Used to drop the name field when switching to Sign in Mode
-			}, formState.inputs.email.isValid && formState.inputs.password.isValid);
+			setFormData(
+				{
+					...formState.inputs, // Bring in existing state
+					name: undefined, // Used to drop the name field when switching to Sign in Mode
+				},
+				formState.inputs.email.isValid && formState.inputs.password.isValid
+			);
 		} else {
-			setFormData({
-				...formState.inputs,
-				name: {
-					value: '',
-					isValid:false
-				}
-			}, false)
+			setFormData(
+				{
+					...formState.inputs,
+					name: {
+						value: '',
+						isValid: false,
+					},
+				},
+				false
+			);
 		}
 		setIsLoginMode(prevMode => !prevMode);
 	};
 
-	const authSubmitHandler = event => {
+	const authSubmitHandler = async event => {
 		event.preventDefault();
-		console.log(formState.inputs);
+
+		if (isLoginMode) {
+
+		} else {
+			try {
+				const response = await fetch('http://localhost:5000/api/users/signup', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				name: formState.inputs.name.value,
+				email: formState.inputs.email.value,
+				password: formState.inputs.password.value,
+			}),
+				});
+				const responseData = await response.json();
+				console.log(responseData);
+			} catch (err) {
+				console.log(err) // Temp error handling
+			}
+		}
+		
+
 		auth.login();
 	};
 	return (
