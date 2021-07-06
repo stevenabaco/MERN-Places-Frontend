@@ -25,15 +25,18 @@ export const useHttpClient = () => {
       signal: httpAbortCtrl.signal
 		});
 
-		const responseData = await response.json();
+    const responseData = await response.json();
+      
 		if (!response.ok) {
 			throw new Error(responseData.message);
     }
-      return responseData
+      setIsLoading(false);
+      return responseData;
     } catch (err) {
       setError(err.message);
+      setIsLoading(false);
+      throw err;
     }
-    setIsLoading(false);
   }, []);
   
   const clearError = () => {
