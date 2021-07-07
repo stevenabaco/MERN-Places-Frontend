@@ -13,6 +13,7 @@ import {
 	VALIDATOR_REQUIRE,
 } from '../../shared/util/validators';
 import './Auth.css';
+import ImageUpload from '../../shared/components/FormElements/ImageUploads/ImageUpload';
 import { AuthContext } from '../../shared/context/auth-context';
 
 const Auth = () => {
@@ -52,6 +53,10 @@ const Auth = () => {
 						value: '',
 						isValid: false,
 					},
+					image: {
+						value: null,
+						isValid: false
+					}
 				},
 				false
 			);
@@ -61,6 +66,8 @@ const Auth = () => {
 
 	const authSubmitHandler = async event => {
 		event.preventDefault();
+
+		console.log(formState.inputs);
 
 		if (isLoginMode) {
 			try {
@@ -124,6 +131,7 @@ const Auth = () => {
 						errorText='Please enter a valid Email address'
 						onInput={inputHandler}
 					/>
+					{!isLoginMode && <ImageUpload center id="image" onInput={ inputHandler}/>}
 					<Input
 						id='password'
 						element='input'
