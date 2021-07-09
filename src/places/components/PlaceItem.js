@@ -31,13 +31,16 @@ const PlaceItem = props => {
 
 		try {
 			sendRequest(
+<<<<<<< HEAD
 
 				`http://localhost:5000/api/places/${props.id}`,
+=======
+				`${process.env.RE}/api/places/${props.id}`, // url
+>>>>>>> parent of b0293a9 (Fix URL link)
 				'DELETE', // Method
 				null, // Body
-				{
-					// Headers
-					Authorization: 'Bearer ' + auth.token,
+				{ // Headers
+					Authorization: 'Bearer ' + auth.token
 				}
 			);
 			props.onDelete(props.id);
