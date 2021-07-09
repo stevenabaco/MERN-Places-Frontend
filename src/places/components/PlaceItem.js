@@ -31,11 +31,12 @@ const PlaceItem = props => {
 
 		try {
 			sendRequest(
-				`${process.env.RE}/api/places/${props.id}`, // url
+				`${process.env.REACT_APP_BACKEND_URL}/places/${props.id}`, // url
 				'DELETE', // Method
 				null, // Body
-				{ // Headers
-					Authorization: 'Bearer ' + auth.token
+				{
+					// Headers
+					Authorization: 'Bearer ' + auth.token,
 				}
 			);
 			props.onDelete(props.id);
