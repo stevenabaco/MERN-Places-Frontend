@@ -2,6 +2,7 @@
 	margin: 1rem;
 	width: calc(45% - 3rem);
 	min-width: 17.5rem;
+ 
 }
 
 .user-item a {
@@ -15,10 +16,10 @@
 	background: #201e1e;
 }
 
-.user-item a:hover,
+/* .user-item a:hover,
 .user-item a:active {
   background: #65acb1;
-}
+} */
 
 .user-item__content {
   padding: 0;
@@ -37,12 +38,12 @@
   color: #65acb1;
 }
 
-.user-item:hover h2,
+/* .user-item:hover h2,
 .user-item:active h2,
 .user-item:hover h3,
 .user-item:active h3 {
   color: #292929;
-}
+} */
 
 .user-item__info h3 {
   margin: 0;

@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .nav-links li {
@@ -19,14 +20,16 @@
   color: #292929;
   text-decoration: none;
   padding: 0.5rem;
+  transition: all .5s ease;
+  border-bottom: 2px solid #292929;
 }
 
 .nav-links a:hover,
 .nav-links a:active,
 .nav-links a.active {
-  background: #65acb1;
-  border-color: #292929;
-  color: #292929;
+  /* background: #65acb1; */
+  border-bottom-color: #65acb1;
+  color: whitesmoke;
 }
 
 .nav-links button {

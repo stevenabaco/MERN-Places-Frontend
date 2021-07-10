@@ -1,9 +1,15 @@
 .card {
   position: relative;
-  margin: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  border-radius: 6px;
+  margin-top: 3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
   padding: 1rem;
   overflow: hidden;
   background: white;
+  border: 1px solid black;
+}
+
+.card:hover {
+box-shadow: 0 1rem 2rem  rgba(0, 0, 0, 1);
+border: 1px solid whitesmoke;  
 }
