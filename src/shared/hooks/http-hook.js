@@ -1,8 +1,10 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
-
+import { useHistory } from 'react-router';
 export const useHttpClient = () => {
 	const [isLoading, setIsLoading] = useState(false);
 	const [error, setError] = useState();
+
+  const history = useHistory(); //Add History to allow redirection
 
   const activeHttpRequests = useRef([]);
 
@@ -43,6 +45,7 @@ export const useHttpClient = () => {
   
   const clearError = () => {
     setError(null)
+    history.push('/')
   }
 
   useEffect(() => {
