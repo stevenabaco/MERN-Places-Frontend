@@ -14,12 +14,12 @@ const UserPlaces = () => {
 
 	useEffect(() => {
 		const fetchPlaces = async () => {
-			try {
+			// try {
 				const responseData = await sendRequest(
 					`${process.env.REACT_APP_BACKEND_URL}/places/user/${userId}`
 				);
 				setLoadedPlaces(responseData.places);
-			} catch (err) {}
+			// } catch (err) {}
 		};
 		fetchPlaces();
 	}, [sendRequest, userId]);
