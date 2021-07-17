@@ -43,6 +43,7 @@ body {
 }
 
 /* MEDIA QUERIES TO HANDLE SMOOTH FONT TRANSITIONS */
+
 @media screen and (min-width: 320px) {
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
