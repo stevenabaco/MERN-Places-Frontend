@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import Users from './user/pages/Users';
+import Places from './places/pages/Places';
 import NewPlace from './places/pages/NewPlace';
 import UserPlaces from './places/pages/UserPlaces';
 import UpdatePlace from './places/pages/UpdatePlace';
@@ -24,10 +25,16 @@ const App = () => {
 		routes = (
 			<Switch>
 				<Route path='/' exact>
+					<Places />
+				</Route>
+				<Route exact path='/users'>
 					<Users />
 				</Route>
 				<Route path='/:userId/places' exact>
 					<UserPlaces />
+				</Route>
+				<Route exact path='/places'>
+					<Places />
 				</Route>
 				<Route path='/places/new' exact>
 					<NewPlace />
@@ -42,6 +49,9 @@ const App = () => {
 		routes = (
 			<Switch>
 				<Route exact path='/'>
+					<Places/>
+				</Route>
+				<Route exact path='/users'>
 					<Users />
 				</Route>
 				<Route exact path='/:userId/places'>

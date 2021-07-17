@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(116, 116, 116);
   
 }
 
@@ -28,7 +29,7 @@
 .nav-links a:active,
 .nav-links a.active {
   /* background: #65acb1; */
-  border-bottom-color: #65acb1;
+  /* border-bottom-color: #65acb1; */
   color: whitesmoke;
 }
 
@@ -54,6 +55,7 @@
 @media (min-width: 768px) {
   .nav-links {
     flex-direction: row;
+    background-color: transparent;
   }
 
   .nav-links li {

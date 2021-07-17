@@ -1,9 +1,10 @@
 .place-item {
   margin: 1rem 0;
+  width: 45em
 }
 
 .place-item__content {
-  padding: 0;
+  padding: 10%;
 }
 
 .place-item__info {
