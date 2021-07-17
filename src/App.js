@@ -6,6 +6,7 @@ import {
 	Switch,
 } from 'react-router-dom';
 
+import Welcome from './home/pages/Welcome';
 import Users from './user/pages/Users';
 import Places from './places/pages/Places';
 import NewPlace from './places/pages/NewPlace';
@@ -49,7 +50,10 @@ const App = () => {
 		routes = (
 			<Switch>
 				<Route exact path='/'>
-					<Places/>
+					<Welcome />
+				</Route>
+				<Route exact path='/places'>
+					<Places />
 				</Route>
 				<Route exact path='/users'>
 					<Users />

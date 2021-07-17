@@ -1,0 +1,98 @@
+
+/* GENERAL CLASSES - MOBILE */
+
+p {
+  text-align: justify;
+}
+
+.alert {
+  color: firebrick;
+}
+
+.content__box{
+  /* align-items: center; */
+  background-color: rgb(241, 241, 241);
+  width: 80%;
+  min-width: 300px;
+  margin: 8% auto;
+  padding: 2rem;
+  color: rgb(29, 29, 29);
+  border-radius: 15px;
+  box-shadow: -3px 30px 40px rgba(0, 0, 0.26);
+}
+
+/* WELCOME CONTAINER - MOBILE */
+
+#welcome__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+
+}
+
+#welcome__container p {
+  
+}
+
+/* WELCOME CONTAINER MAIN - MOBILE */
+
+#welcome__container_main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#welcome__container__main h1 {
+  text-align: center;
+}
+
+/* WELCOME CONTAINER INFO - MOBILE */
+
+#welcome__container__info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#welcome__container__info h1 {
+  text-align: center;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media screen and (min-width: 576px) {
+  
+  /* Welcome Container Main */
+
+    #welcome__container__main{
+
+    }
+  }
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  
+  }
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) { 
+
+  
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  #welcome__container {
+  flex-direction: row;
+  align-items: baseline;
+}
+  #welcome__container__main {
+    flex-basis: 60%;
+  }
+
+  #welcome__container__info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+  }
+  }
